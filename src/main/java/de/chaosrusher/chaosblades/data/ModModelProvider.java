@@ -15,11 +15,14 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ANIMONIUM_ORE);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        itemModelGenerator.register(ModItems.RAW_ANIMONIUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ANIMONIUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MOIR_KATANA, Models.GENERATED);
 
     }
 }

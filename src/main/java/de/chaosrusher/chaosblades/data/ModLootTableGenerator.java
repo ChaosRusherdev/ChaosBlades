@@ -12,5 +12,6 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
+        addDrop(ModBlocks.ANIMONIUM_ORE,oreDrops(ModBlocks.ANIMONIUM_ORE,ModItems.RAW_ANIMONIUM));
     }
 }

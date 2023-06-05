@@ -20,10 +20,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
-
-
-
-
-
+        offerSmelting(exporter, List.of(ModItems.RAW_ANIMONIUM), RecipeCategory.MISC, ModItems.ANIMONIUM,
+                0.7f, 200, "animonium");
     }
 }

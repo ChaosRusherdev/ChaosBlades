@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "chaosblades",
+	"version": "${version}",
+	"name": "ChaosBlades Mod",
+	"description": "This is an mod made for my smp",
+	"authors": [
+		"ChaosRusher"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": ""
+	},
+	"license": "MIT",
+	"icon": "assets/chaosblades/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "de.chaosrusher.chaosblades.ChaosBlades"
+		],
+		"client": [
+          "de.chaosrusher.chaosblades.ChaosBladesClient"
+		],
+		"fabric-datagen": [
+          "de.chaosrusher.chaosblades.ChaosBladesDataGenerator"
+		]
+	},
+	"mixins": [
+		"chaosbladesmixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.12",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

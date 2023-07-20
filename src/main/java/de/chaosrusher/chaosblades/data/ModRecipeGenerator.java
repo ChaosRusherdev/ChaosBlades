@@ -22,20 +22,25 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
     public void generate(Consumer<RecipeJsonProvider> exporter) {
         offerSmelting(exporter, List.of(ModItems.RAW_ANIMONIUM), RecipeCategory.MISC, ModItems.ANIMONIUM,
                 0.7f, 200, "animonium");
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.ANIMONIUM, RecipeCategory.DECORATIONS,
+                ModBlocks.ANIMONIUM_BLOCK);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.YORU)
-                .pattern("SSS")
+                .pattern("FSF")
                 .pattern("CXC")
-                .pattern("SSS")
+                .pattern("FSF")
                 .input('X', Items.IRON_SWORD)
                 .input('C', Items.INK_SAC)
                 .input('S',ModItems.ANIMONIUM)
+                .input('F',ModBlocks.ANIMONIUM_BLOCK)
                 .criterion(FabricRecipeProvider.hasItem(Items.IRON_SWORD),
                         FabricRecipeProvider.conditionsFromItem(Items.IRON_SWORD))
                 .criterion(FabricRecipeProvider.hasItem(Items.INK_SAC),
                         FabricRecipeProvider.conditionsFromItem(Items.INK_SAC))
                 .criterion(FabricRecipeProvider.hasItem(ModItems.ANIMONIUM),
                         FabricRecipeProvider.conditionsFromItem(ModItems.ANIMONIUM))
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.ANIMONIUM_BLOCK),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.ANIMONIUM_BLOCK))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.YORU)));
     }
 }

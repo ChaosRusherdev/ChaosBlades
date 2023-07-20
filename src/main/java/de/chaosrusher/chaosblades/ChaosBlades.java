@@ -1,5 +1,6 @@
 package de.chaosrusher.chaosblades;
 
+import de.chaosrusher.chaosblades.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import de.chaosrusher.chaosblades.block.ModBlocks;
@@ -18,5 +19,7 @@ public class ChaosBlades implements ModInitializer {
 		ModItemGroup.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModWorldGeneration.generateModWorldGen();
 	}
 }

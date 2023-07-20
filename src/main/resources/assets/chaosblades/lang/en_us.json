@@ -2,6 +2,12 @@
   "item.chaosblades.raw_animonium": "Raw Animonium Chunk",
   "item.chaosblades.animonium": "Animonium",
   "item.chaosblades.moir_katana": "Moir's Katana",
-  "item.chaosblades.animonium_ore": "Animonium Ore"
+  "item.chaosblades.omega_bonk": "Fabis Hammer of Bonk",
+  "item.chaosblades.yoru": "Sword of the worlds strongest Painter",
+  "item.chaosblades.mihawks_taschenmesser": "2nd strongest sword of the worlds strongest Painter",
+
+
+  "block.chaosblades.animonium_ore": "Animonium Ore",
+  "block.chaosblades.animonium_block": "Animonium Block"
 
 }

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "chaosblades:animonium_ore"
+    "chaosblades:animonium_ore",
+    "chaosblades:animonium_block"
   ]
 }

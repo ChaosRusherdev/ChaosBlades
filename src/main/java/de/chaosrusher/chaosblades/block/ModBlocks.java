@@ -17,8 +17,10 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
-    public static final Block ANIMONIUM_ORE = registerBlock("animonium_ore.json",
+    public static final Block ANIMONIUM_ORE = registerBlock("animonium_ore",
             new Block(FabricBlockSettings.of(Material.METAL).strength(5.0f).requiresTool()), ModItemGroup.CHAOSBLADES);
+    public static final Block ANIMONIUM_BLOCK = registerBlock("animonium_block",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(8.0f).requiresTool()), ModItemGroup.CHAOSBLADES);
 
     //public static final Block CITRINE_ORE = registerBlock("citrine_ore",
     //        new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(),

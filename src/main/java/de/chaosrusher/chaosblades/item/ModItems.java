@@ -37,22 +37,10 @@ public class ModItems {
         return Registry.register(Registries.ITEM, new Identifier(ChaosBlades.MOD_ID, name), item);
     }
 
-    public static void addItemsToItemGroup() {
-        addToItemGroup(ModItemGroup.CHAOSBLADES,RAW_ANIMONIUM);
-        addToItemGroup(ModItemGroup.CHAOSBLADES, ANIMONIUM);
-        addToItemGroup(ModItemGroup.CHAOSBLADES,MOIR_KATANA);
-        addToItemGroup(ModItemGroup.CHAOSBLADES,OMEGA_BONK);
-        addToItemGroup(ModItemGroup.CHAOSBLADES,YORU);
-        addToItemGroup(ModItemGroup.CHAOSBLADES,FLORATANA);
-        addToItemGroup(ModItemGroup.CHAOSBLADES,MIHAWKS_TASCHENMESSER);
-    }
 
-    private static void addToItemGroup(ItemGroup group, Item item) {
-        ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
-    }
+
     public static void registerModItems() {
         ChaosBlades.LOGGER.info("Registering Mod Items for " + ChaosBlades.MOD_ID);
 
-        addItemsToItemGroup();
     }
 }

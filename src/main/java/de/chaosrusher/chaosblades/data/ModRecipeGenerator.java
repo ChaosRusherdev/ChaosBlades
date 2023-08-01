@@ -42,5 +42,80 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.ANIMONIUM_BLOCK),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.ANIMONIUM_BLOCK))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.YORU)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.MOIR_KATANA)
+                .pattern("FSF")
+                .pattern("CXD")
+                .pattern("FSF")
+                .input('X', Items.IRON_SWORD)
+                .input('C', Items.ORANGE_DYE)
+                .input('D', Items.CARROT)
+                .input('S',ModItems.ANIMONIUM)
+                .input('F',ModBlocks.ANIMONIUM_BLOCK)
+                .criterion(FabricRecipeProvider.hasItem(Items.IRON_SWORD),
+                        FabricRecipeProvider.conditionsFromItem(Items.IRON_SWORD))
+                .criterion(FabricRecipeProvider.hasItem(Items.ORANGE_DYE),
+                        FabricRecipeProvider.conditionsFromItem(Items.ORANGE_DYE))
+                .criterion(FabricRecipeProvider.hasItem(Items.CARROT),
+                        FabricRecipeProvider.conditionsFromItem(Items.CARROT))
+                .criterion(FabricRecipeProvider.hasItem(ModItems.ANIMONIUM),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.ANIMONIUM))
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.ANIMONIUM_BLOCK),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.ANIMONIUM_BLOCK))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.MOIR_KATANA)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FLORATANA)
+                .pattern("FSF")
+                .pattern("CXC")
+                .pattern("FSF")
+                .input('X', Items.IRON_SWORD)
+                .input('C', Items.FIREWORK_ROCKET)
+                .input('S',ModItems.ANIMONIUM)
+                .input('F',ModBlocks.ANIMONIUM_BLOCK)
+                .criterion(FabricRecipeProvider.hasItem(Items.IRON_SWORD),
+                        FabricRecipeProvider.conditionsFromItem(Items.IRON_SWORD))
+                .criterion(FabricRecipeProvider.hasItem(Items.FIREWORK_ROCKET),
+                        FabricRecipeProvider.conditionsFromItem(Items.FIREWORK_ROCKET))
+                .criterion(FabricRecipeProvider.hasItem(ModItems.ANIMONIUM),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.ANIMONIUM))
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.ANIMONIUM_BLOCK),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.ANIMONIUM_BLOCK))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.FLORATANA)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.MIHAWKS_TASCHENMESSER)
+                .pattern("FSF")
+                .pattern("CXC")
+                .pattern("FSF")
+                .input('X', Items.IRON_SWORD)
+                .input('C', Items.IRON_INGOT)
+                .input('S',ModItems.ANIMONIUM)
+                .input('F',ModBlocks.ANIMONIUM_BLOCK)
+                .criterion(FabricRecipeProvider.hasItem(Items.IRON_SWORD),
+                        FabricRecipeProvider.conditionsFromItem(Items.IRON_SWORD))
+                .criterion(FabricRecipeProvider.hasItem(Items.IRON_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(FabricRecipeProvider.hasItem(ModItems.ANIMONIUM),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.ANIMONIUM))
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.ANIMONIUM_BLOCK),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.ANIMONIUM_BLOCK))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.MIHAWKS_TASCHENMESSER)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.OMEGA_BONK)
+                .pattern("FSF")
+                .pattern("CXC")
+                .pattern("FSF")
+                .input('X', Items.IRON_SWORD)
+                .input('C', Items.NETHERITE_INGOT)
+                .input('S',ModItems.ANIMONIUM)
+                .input('F',ModBlocks.ANIMONIUM_BLOCK)
+                .criterion(FabricRecipeProvider.hasItem(Items.IRON_SWORD),
+                        FabricRecipeProvider.conditionsFromItem(Items.IRON_SWORD))
+                .criterion(FabricRecipeProvider.hasItem(Items.NETHERITE_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(Items.NETHERITE_INGOT))
+                .criterion(FabricRecipeProvider.hasItem(ModItems.ANIMONIUM),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.ANIMONIUM))
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.ANIMONIUM_BLOCK),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.ANIMONIUM_BLOCK))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.OMEGA_BONK)));
     }
 }

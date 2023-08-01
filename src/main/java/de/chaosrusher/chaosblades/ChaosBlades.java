@@ -22,4 +22,5 @@ public class ChaosBlades implements ModInitializer {
 
 		ModWorldGeneration.generateModWorldGen();
 	}
+
 }
